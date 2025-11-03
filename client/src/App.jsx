@@ -67,8 +67,8 @@ const MainLayout = () => {
         Update these values as needed for your business.
       */}
       <ChatWidget 
-        salesNumber="+12345678901"
-        supportNumber="+19876543210"
+        salesNumber="+966554026599"
+        supportNumber="+966553800550"
       />
       
       <main className={mainContentClass}>
