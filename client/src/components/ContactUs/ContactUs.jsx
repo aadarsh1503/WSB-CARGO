@@ -267,7 +267,7 @@ const ContactUs = () => {
     `;
 
         // Static email configuration
-        const customerCareEmail = "info@gvscargo.com";
+        const customerCareEmail = "ksacargo@gvscargo.com";
         const emailData = { 
             to: customerCareEmail, 
             from: customerCareEmail, 
