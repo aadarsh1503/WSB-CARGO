@@ -109,7 +109,7 @@ const MainLayout = () => {
 
 function App() {
   // The useLenis hook for smooth scrolling is kept
-  useLenis();
+  // useLenis();
 
   return (
     <Router>

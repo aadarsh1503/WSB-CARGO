@@ -15,7 +15,7 @@ const Footer = () => {
     address: [
       "Dammam – Eastern Province",
       "Postal: 32641",
-      "Saudi Arabia"
+      "Kingdom Of Saudi Arabia"
     ],
     phones: [
       "+966 554026599",
@@ -53,7 +53,7 @@ const Footer = () => {
       setLoading(true);
       const formData = new FormData();
       formData.append('email', email);
-      formData.append('list', 'I763763SovbXrHJQHGuQ9EYMDw'); // Your specific list ID
+      formData.append('list', 'g892vrOVUvmy2zs5sngtrPzg'); // Your specific list ID
       formData.append('subform', 'yes');
       formData.append('hp', '');
 
