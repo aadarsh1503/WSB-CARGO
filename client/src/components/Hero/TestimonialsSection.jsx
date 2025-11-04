@@ -3,45 +3,45 @@ import i69 from "./i69.jpeg";
 import i22 from "./i22.jpg";
 import i3 from "./i3.avif";
 import i4 from "./i4.jpg";
-import logo2 from "./logo2.png"
-import logo3 from "./logo3.png"
-import logo33 from "./logo33.png"
-import logo4 from "./logo4.png"
+import aramvo from "./aramvo.png"
+import sabic from "./sabic.png"
+import nesma from "./nesma.png"
+import nada from "./nada.png"
 import logo55 from "./logo55.png"
 
 
 
 const testimonialsData = [
   {
-    name: 'Silver Star Trading',
+    name: 'Aramco',
     title: 'Supply Chain Manager',
     quote: "We’ve worked with many logistics providers over the years, but WSB cargo & logistics stands out for their precision, communication, and attention to detail. Their team’s coordination with our air freight operations has helped streamline several large-scale shipments.",
-    image: logo2,
+    image: aramvo,
   },
   {
-    name: 'Bahwan Motors Auto Accessories',
+    name: 'SABIC',
     title: 'E-commerce Founder',
     quote: 'Partnering with WSB cargo & logistics has significantly optimized our freight handling and distribution timelines. Their team is proactive, professional, and always delivers beyond expectations. It is rare to find a logistics partner that understands both speed and reliability as they do.',
-    image: logo3,
+    image: sabic,
   },
   {
-    name: 'The BeautyCO',
+    name: 'NESMA',
     title: 'Operations Director',
     quote: 'Personalized Service and Expertise Their personalized service and expertise in international logistics are second to none. They took the time to understand our unique needs and provided tailored solutions. Their team is always available to answer our questions and provide updates, giving us peace of mind.',
-    image: logo33,
+    image: nesma,
   },
   {
-    name: 'Silver Star Printing Material Trading LLC',
+    name: 'NADA',
     title: 'Import/Export Specialist',
     quote: "Efficient and Transparent Logistics Solutions Their efficiency and transparency have set a new standard for us. From managing documents to on-time deliveries, they’ve ensured a smooth experience every step of the way. Their proactive approach has significantly improved our operations.",
-    image: logo4,
+    image: nada,
   },
-  {
-    name: 'Emirates For Universal Tyres',
-    title: 'Import/Export Specialist',
-    quote: "WSB cargo & logistics has been instrumental in supporting our regional supply chain across the GCC. Their warehousing, last-mile delivery, and customs clearance services are efficient and trustworthy. We consider them a strategic extension of our own logistics team.",
-    image: logo55,
-  },
+  // {
+  //   name: 'Emirates For Universal Tyres',
+  //   title: 'Import/Export Specialist',
+  //   quote: "WSB cargo & logistics has been instrumental in supporting our regional supply chain across the GCC. Their warehousing, last-mile delivery, and customs clearance services are efficient and trustworthy. We consider them a strategic extension of our own logistics team.",
+  //   image: logo55,
+  // },
 ];
 
 
@@ -75,17 +75,17 @@ const TestimonialsSection = () => {
           <div className="flex -space-x-4">
   <img
     className="h-12 w-12 rounded-full border-2 border-black object-contain bg-white p-1"
-    src={logo33}
+    src={nada}
     alt="Client 1"
   />
   <img
     className="h-12 w-12 rounded-full border-2 border-black object-contain bg-white p-1"
-    src={logo55}
+    src={sabic}
     alt="Client 2"
   />
   <img
     className="h-12 w-12 rounded-full border-2 border-black object-contain bg-white p-1"
-    src={logo2}
+    src={aramvo}
     alt="Client 3"
   />
   <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-orange-500 text-sm font-semibold text-white">
