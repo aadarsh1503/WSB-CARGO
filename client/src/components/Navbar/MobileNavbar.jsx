@@ -83,13 +83,13 @@ const MobileNavbar = ({
           }`}
           style={{ transitionDelay: `${navItems.length * 50}ms` }}
         >
-          <Select
+          {/* <Select
             value={selectedRegionObject}
             onChange={handleRegionChange}
             options={regionOptions}
             formatOptionLabel={formatOptionLabel}
             styles={mobileCustomSelectStyles}
-          />
+          /> */}
         </div>
       <nav className="flex flex-col bg-white z-50 items-center mt-8 px-4">
         {navItems.map((item, index) => (
