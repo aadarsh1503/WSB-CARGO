@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaInstagram, FaFacebook, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaArrowRight } from 'react-icons/fa';
 import g4 from './g4.png';
-import ws9 from './ws9.png';
+import white from './white.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -23,10 +23,10 @@ const Footer = () => {
     ],
     email: "ksacargo@gvscargo.com",
     social: {
-      linkedin: "#",
-      instagram: "#",
-      facebook: "#",
-      twitter: "#"
+      linkedin: "https://www.linkedin.com/company/gvsbahrain/",
+      instagram: "https://instagram.com/gvscargo",
+      facebook: "https://facebook.com/gvscargo",
+      twitter: "https://twitter.com/gvscargo"
     }
   };
 
@@ -121,9 +121,10 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row max-w-7xl justify-between items-center lg:items-start text-center lg:text-left mx-auto">
 
                     {/* Left Section: Logo & Social */}
-                    <div className="flex flex-col items-center lg:-mt-10 mt-0 lg:items-start mb-8 lg:mb-0">
-                        <img src={ws9} alt="WSB Cargo & Logistics" className="h-36 mt-4 mb-0 rounded-xl w-full" />
-                        <div className="flex space-x-6 mt-0 lg:mt-4 lg:mb-0 mb-6">
+                    <div className="flex flex-col items-center lg:-mt-14 mt-0 lg:items-start mb-8 lg:mb-0">
+                    <p className="text-lg mb-2 relative top-16 left-10"> In partnership with:</p>
+                        <img src={white} alt="WSB Cargo & Logistics" className="h-auto w-64 mt-4 mb-0 rounded-xl " />
+                        <div className="flex space-x-6 mt-0  lg:mb-0 lg:-mt-6 mb-6">
                             <a href={contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full transition-transform hover:scale-110"><FaLinkedin className="text-DarkBlue text-3xl" /></a>
                             <a href={contactInfo.social.instagram} target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full transition-transform hover:scale-110"><FaInstagram className="text-DarkBlue text-3xl" /></a>
                             <a href={contactInfo.social.facebook} target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full transition-transform hover:scale-110"><FaFacebook className="text-DarkBlue text-3xl" /></a>
@@ -157,10 +158,13 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Right Section: Developer Credit */}
+                    {/* Right Section: Partner Credit */}
                     <div className="flex flex-col items-center">
-                        <p className="text-sm mb-2">Developed and monitored by:</p>
-                        <a href="https://gvs-bh.com/" target="_blank" rel="noopener noreferrer"><img src={g4} alt="GVS IT Division" className="h-32 w-46 rounded-xl lg:w-38" /></a>
+                        {/* --- CHANGE: Updated text to reflect partnership --- */}
+                        <p className="text-sm mb-2">Technology Partner:</p>
+                        <a href="https://gvs-bh.com/" target="_blank" rel="noopener noreferrer">
+                            <img src={g4} alt="GVS IT Division" className="h-32 w-46 rounded-xl lg:w-38" />
+                        </a>
                     </div>
                 </div>
             </div>
