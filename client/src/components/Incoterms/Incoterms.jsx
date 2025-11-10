@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ColorBar from '../Colorbar/Colorbar';
 import IncotermsSection from './IncotermsSection';
-import { useRegion } from '../../context/RegionContext'; // Import the context hook
+// The useRegion context import has been removed.
 
 function CollapsibleSection({ title, description }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,17 +37,7 @@ function CollapsibleSection({ title, description }) {
 }
 
 function Incoterms() {
-  // Get content and loading state from the context
-  const { content, isLoading } = useRegion();
-
-  // Show a loading state until content is ready
-  if (isLoading || !content) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <p className="text-xl">Loading Regional Content...</p>
-      </div>
-    );
-  }
+  // The context hook and loading state have been removed.
 
   return (
     <div>
@@ -63,8 +53,8 @@ function Incoterms() {
               The seller merely makes the goods available to the buyer at his/her home within the established period and is not responsible for the clearance for export or <br /> for loading the goods onto any collection vehicle. Usable in any mode of transport.
               <br />
               <br />
-              {/* --- DYNAMIC CHANGE HERE --- */}
-              Note: since the foreign buyer does not have the legal conditions to arrange for customs clearance for goods to leave the country, it is understood that this <br /> measure is adopted by the seller, at his/her own expense and risk, in the case of<br /> {content.name.toUpperCase()} exports.
+              {/* --- DYNAMIC CONTENT REMOVED --- */}
+              Note: since the foreign buyer does not have the legal conditions to arrange for customs clearance for goods to leave the country, it is understood that this <br /> measure is adopted by the seller, at his/her own expense and risk, in the case of<br /> domestic exports.
             </>
           }
         />
@@ -80,8 +70,8 @@ function Incoterms() {
               The seller completes his obligations and ends his liability when he delivers the goods, cleared for export, to the carrier or to another person indicated by<br/> the buyer, at the named place in the country of origin. Usable in any mode of transport.
               <br />
               <br />
-              {/* --- DYNAMIC CHANGE HERE --- */}
-              Note: since the foreign buyer does not have the legal conditions to arrange for customs clearance for goods to leave the country, it is understood that this <br/> measure is adopted by the seller, at his/her own expense and risk, in the case of {content.name.toUpperCase()} exports.
+              {/* --- DYNAMIC CONTENT REMOVED --- */}
+              Note: since the foreign buyer does not have the legal conditions to arrange for customs clearance for goods to leave the country, it is understood that this <br/> measure is adopted by the seller, at his/her own expense and risk, in the case of domestic exports.
               <br />
               <br />
               <strong className='text-3xl mt-2'>FAS – Free Along Side Ship</strong>
@@ -155,8 +145,8 @@ function Incoterms() {
               The seller, in addition to customs clearance, assumes all risks and costs, including taxes, fees, and other charges incident on import. Usable in any mode of transport.
               <br />
               <br />
-              {/* --- DYNAMIC CHANGE HERE --- */}
-              <strong className='text-xl mt-10'>Note:</strong> Since the foreign seller does not have the legal conditions to arrange customs clearance for the entry of goods into the country, this term cannot be used for {content.name} imports. DAT or DAP must be chosen if a condition regulated by the ICC is preferred.
+              {/* --- DYNAMIC CONTENT REMOVED --- */}
+              <strong className='text-xl mt-10'>Note:</strong> Since the foreign seller does not have the legal conditions to arrange customs clearance for the entry of goods into the country, this term cannot be used for domestic imports. DAT or DAP must be chosen if a condition regulated by the ICC is preferred.
             </>
           }
         />
