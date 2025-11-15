@@ -131,10 +131,18 @@ const Navbar = () => {
       name: "Contact Us",
       isExternal: true, // Keep this for mailto links
       dropdown: [
-        // Updated to a single, static email as requested
+        // Updated to include three specific email addresses
         {
-          name: "General Inquiries",
-          link: `mailto:ksacargo@gvscargo.com`,
+          name: "Business Enquries",
+          link: "mailto:info@wsb.world",
+        },
+        {
+          name: "Sales team",
+          link: "mailto:cargo@wsb.world",
+        },
+        {
+          name: "General support",
+          link: "mailto:ksacargo@gvscargo.com",
         },
       ],
     },

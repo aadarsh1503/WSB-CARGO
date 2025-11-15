@@ -10,18 +10,21 @@ const Footer = () => {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // Static content that was previously fetched
+  // Static content with updated address and emails
   const contactInfo = {
     address: [
-      "Dammam – Eastern Province",
-      "Postal: 32641",
-      "Kingdom Of Saudi Arabia"
+      "King Khalid Str., Dammam,",
+      "Kingdom of Saudi Arabia"
     ],
     phones: [
       "+966 554026599",
       "+966 553800550"
     ],
-    email: "ksacargo@gvscargo.com",
+    emails: [
+        { name: "Business Enquiries", link: "mailto:info@wsb.world" },
+        { name: "Sales Team", link: "mailto:cargo@wsb.world" },
+        { name: "General Support", link: "mailto:ksacargo@gvscargo.com" },
+    ],
     social: {
       linkedin: "https://www.linkedin.com/company/gvsbahrain/",
       instagram: "https://instagram.com/gvscargo",
@@ -153,14 +156,19 @@ const Footer = () => {
                             </div>
                             <div className="flex items-start space-x-4">
                                 <FaEnvelope className="text-white mt-1" />
-                                <a href={`mailto:${contactInfo.email}`} className="hover:underline">{contactInfo.email}</a>
+                                <div>
+                                    {contactInfo.emails.map((emailItem, index) => (
+                                        <a key={index} href={emailItem.link} className="hover:underline block">
+                                            {emailItem.name}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     {/* Right Section: Partner Credit */}
                     <div className="flex flex-col items-center">
-                        {/* --- CHANGE: Updated text to reflect partnership --- */}
                         <p className="text-sm mb-2">Technology Partner:</p>
                         <a href="https://gvs-bh.com/" target="_blank" rel="noopener noreferrer">
                             <img src={g4} alt="GVS IT Division" className="h-32 w-46 rounded-xl lg:w-38" />
