@@ -25,6 +25,7 @@ const fetchCitiesByCountry = async (country) => {
         cache.set(country, cities);
         return cities;
     } catch (error) { console.error("Error fetching cities:", error); return []; }
+    //
 };
 
 const validateField = (name, value) => {
