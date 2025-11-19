@@ -240,7 +240,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-4">
             {/* The Select component for region has been removed */}
             <Link
-              to="/ContactUs"
+              to="/contactUs"
               className={`px-6 py-2.5 font-semibold text-sm rounded-full shadow-lg transition-all duration-300 ${
                 isTransparent
                   ? "bg-white text-gray-800 hover:bg-gray-200"
