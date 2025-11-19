@@ -45,7 +45,7 @@ const Heronext = () => {
                 "Founded by seasoned trade professionals, WSB Cargo & Logistics provides end-to-end export and import solutions worldwide, delivering efficient customs processes and reliable logistics services with professionalism and speed."
               </p>
               {/* Contact Us Button */}
-              <a href='/ContactUs'>
+              <a href='/contactUs'>
               <button className="mt-8 inline-flex items-center rounded-full bg-white px-6 py-3 font-semibold text-gray-800 transition-colors duration-300 hover:bg-gray-200">
                 <span>Contact Us</span>
                 <span className="ml-3 flex h-7 w-7 items-center justify-center rounded-full bg-orange-500">
