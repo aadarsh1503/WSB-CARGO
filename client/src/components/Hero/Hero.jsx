@@ -54,7 +54,7 @@ const SlideContent = ({ title, subtitle, description }) => (
           <p className="hero-subtitle">{subtitle}</p>
           <p className="hero-description">{description}</p>
           <div className="hero-buttons">
-            <a href='/ContactUs'>
+            <a href='/contactUs'>
               <button className="hero-quote-btn">Get A Quote</button>
             </a>
             <a href='/whoWeAre'>

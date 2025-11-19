@@ -177,7 +177,7 @@ const MobileNavbar = ({
           style={{ transitionDelay: `${(navItems.length + 1) * 50}ms` }}
         >
           <Link
-            to="/ContactUs"
+            to="/contactUs"
             onClick={handleLinkClick}
             className="px-10 py-3  bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105"
           >
