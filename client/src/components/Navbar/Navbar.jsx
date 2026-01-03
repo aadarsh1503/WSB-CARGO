@@ -176,7 +176,7 @@ const Navbar = () => {
                   initial="initial"
                   animate="animate"
                   exit="exit"
-                  src={ws1}
+                  src="i98.png"
                   alt="GVS Logo White"
                   className="h-20 w-auto"
                 />
@@ -187,7 +187,7 @@ const Navbar = () => {
                   initial="initial"
                   animate="animate"
                   exit="exit"
-                  src={WSB}
+                      src="i98.png"
                   alt="GVS Logo Black"
                   className="h-20 w-auto"
                 />

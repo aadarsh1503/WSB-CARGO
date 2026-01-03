@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-// The useLocation hook is still needed for the dynamic padding logic
+
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
-// ========= YOUR EXISTING COMPONENT IMPORTS =========
-// GlobalLoader and RegionTransitionOverlay are no longer needed here
+
 import Navbar from "./components/Navbar/Navbar";
 import ChatWidget from "./components/ChatWidget/ChatWidget";
 import Footer from "./components/Footer/Footer";
