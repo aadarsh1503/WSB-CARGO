@@ -127,7 +127,7 @@ const Footer = () => {
                     <div className="flex flex-col items-center lg:-mt-14 mt-0 lg:items-start mb-8 lg:mb-0">
                     <p className="text-lg mb-2 relative top-16 left-[32px]"> In partnership with:</p>
                         <img src={white} alt="WSB Cargo & Logistics" className="h-auto w-64 mt-4 mb-0 rounded-xl " />
-                        <div className="flex space-x-6 mt-0  lg:mb-0 lg:mt-0 mb-6">
+                        <div className="flex space-x-6 mt-0 relative bottom-8 lg:mb-0 lg:mt-0 mb-6">
                             <a href={contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full transition-transform hover:scale-110"><FaLinkedin className="text-DarkBlue text-3xl" /></a>
                             <a href={contactInfo.social.instagram} target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full transition-transform hover:scale-110"><FaInstagram className="text-DarkBlue text-3xl" /></a>
                             <a href={contactInfo.social.facebook} target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full transition-transform hover:scale-110"><FaFacebook className="text-DarkBlue text-3xl" /></a>
